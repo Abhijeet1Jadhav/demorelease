@@ -31,8 +31,8 @@
       "@semantic-release/github",
       {
         "assets": "dist/*.tgz"
-      }
+      },
     ]
-    "@semantic-release/npm",
+    "@semantic-release/npm"
   ]
 }
