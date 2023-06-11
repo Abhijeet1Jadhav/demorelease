@@ -26,6 +26,6 @@
         "npmPublish": true,
         "tarballDir": "dist"
       }
-    ],
+    ]
   ]
 }
