@@ -21,7 +21,7 @@ jobs:
           cache: npm
           node-version: lts/*
       - run: npm config set registry https://registry.npmjs.org
-      - run: npm install @semantic-release/github
+      - run: npm install @semantic-release/github@9.0.3
       - run: npm ci
       - run: npx semantic-release
         env:
