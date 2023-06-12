@@ -24,7 +24,8 @@ jobs:
       - run: npm config set registry https://registry.npmjs.org
       - run: npm install @semantic-release/github@9.0.3
       - run: npm ci
-      - run: npx semantic-release
+      - run: npm publish --access public
+      # - run: npx semantic-release
         env:
           GH_TOKEN: ${{ secrets.RELEASE_GIT_TOKEN }}
           NPM_TOKEN: ${{ secrets.RELEASE_NPM_TOKEN }}
