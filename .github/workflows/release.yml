@@ -25,7 +25,7 @@ jobs:
       - run: npm install @semantic-release/github -D
       - run: echo "https//registry.npmjs.org/:_authToken=${{ secrets.RELEASE_NPM_TOKEN }}" > ~/.npmrc
       - run: npm ci
-      - run: yum install git -y
+      - run: npm install git -y
       - run: npx semantic-release
         env:
           GH_TOKEN: ${{ secrets.RELEASE_GIT_TOKEN }}
