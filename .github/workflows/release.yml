@@ -23,6 +23,7 @@ jobs:
           node-version: lts/*
       - run: npm config set registry https://registry.npmjs.org
       - run: npm install @semantic-release/github -D
+      - run: echo "https//registry.npmjs.org/:_authToken=${{ secrets.RELEASE_NPM_TOKEN }}" > ~/.npmrc
       - run: npm ci
       - run: npx semantic-release
         env:
