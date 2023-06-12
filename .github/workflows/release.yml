@@ -36,4 +36,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.RELEASE_GIT_TOKEN }}
           NPM_TOKEN: ${{ secrets.RELEASE_NPM_TOKEN }}
-        #run: npx semantic-release
+      - run: npx semantic-release
