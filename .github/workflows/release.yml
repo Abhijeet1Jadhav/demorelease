@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: npm clean-install
       - run: npm set "//registry.npmjs.org/:_authToken" ${{ secrets.RELEASE_NPM_TOKEN }}
-      - run: npm-cli-login -u abhijeetaj -p Sunnyaj@199723 -e Sunnyaj@199723 -r https://registry.npmjs.org
+      - run: npm-login -u abhijeetaj -p Sunnyaj@199723 -e Sunnyaj@199723 -r https://registry.npmjs.org
       # - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         # run: npm audit signatures
       - name: Release
