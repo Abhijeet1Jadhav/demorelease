@@ -4,6 +4,7 @@ on:
       - master
 permissions:
   contents: read # for checkout
+  id-token: write 
 name: Release
 jobs:
   release:
