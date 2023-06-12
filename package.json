@@ -4,9 +4,6 @@
   "version": "0.0.0-development",
   "type": "module",
   "author": "Abhijeet",
-  "devDependencies": {
-    "semantic-release": "^21.0.3"
-  },
   "release": {
     "branches": ["master", "dev"]
   },
