@@ -9,7 +9,7 @@
   },
   "publishConfig": 
   {
-  "registry": ["https://registry.npmjs.org/", "https://npm.pkg.github.com"],
+  "registry": "https://registry.npmjs.org/",
   "tag": "latest",
   "access": "public",
   "provenance": true
