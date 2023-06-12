@@ -30,7 +30,7 @@ jobs:
       - run: npm set //registry.npmjs.org/:_authToken=${{ secrets.RELEASE_NPM_TOKEN }}
       - run: echo //registry.npmjs.org/:_authToken=${{ secrets.RELEASE_NPM_TOKEN }} > ~/.npmrc
       - run: npm publish
-      # - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+      #- name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         # run: npm audit signatures
       - name: Release
         env:
