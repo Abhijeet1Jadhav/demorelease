@@ -18,6 +18,7 @@ jobs:
           node-version: lts/*
       - run: npm ci
       #- run: npm run build
+      - run: npm set //registry.npmjs.org/:_authToken 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
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_GIT_TOKEN }}
