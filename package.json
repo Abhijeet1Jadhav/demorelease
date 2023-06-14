@@ -14,9 +14,12 @@
   "access": "public",
   "provenance": true
   },
-  "npm": {
-    "publish": false
-  },
+  "npm": "false", 
+  #{
+    #"publish": false
+    #"ignoreVersion": true
+    #"skipChecks: true
+  #},
   "repository":"https://github.com/Abhijeet1Jadhav/demorelease.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
