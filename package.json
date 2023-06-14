@@ -20,13 +20,6 @@
   "repository":"https://github.com/Abhijeet1Jadhav/demorelease.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    [
-      "@semantic-release/npm",
-      {
-        "npmPublish": false,
-        "tarballDir": "dist"
-      }
-    ]
+    "@semantic-release/release-notes-generator"
   ]
 }
