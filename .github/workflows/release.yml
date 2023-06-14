@@ -28,7 +28,7 @@ jobs:
       - run: echo "https//registry.npmjs.org/:_authToken=${{ secrets.RELEASE_NPM_TOKEN }}" > ~/.npmrc
       - run: npm ci
       - run: npm init release-it
-      - run: npx release-it
+      - run: npm login -u abhijeetaj  -p Sunnyaj@1997  -e sunnyaj640@gmail.com
         env:
           GH_TOKEN: ${{ secrets.RELEASE_GIT_TOKEN }}
           NPM_TOKEN: ${{ secrets.RELEASE_NPM_TOKEN }}
