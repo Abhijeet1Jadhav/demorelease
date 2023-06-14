@@ -7,19 +7,14 @@
   "release": {
     "branches": ["master", "dev"]
   },
-  "publishConfig": 
-  {
-  "registry": "https://registry.npmjs.org/",
-  "tag": "latest",
-  "access": "public",
-  "provenance": true
-  },
-  "npm": "false", 
-  #{
-    #"publish": false
-    #"ignoreVersion": true
-    #"skipChecks: true
+  #"publishConfig": 
+ # {
+  #"registry": "https://registry.npmjs.org/",
+  #"tag": "latest",
+  #"access": "public",
+ # "provenance": true
   #},
+  "npm": "false",
   "repository":"https://github.com/Abhijeet1Jadhav/demorelease.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
