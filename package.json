@@ -7,7 +7,7 @@
   "release": {
     "branches": ["master", "dev"]
   },
-  "npm": "false",
+  "npm": "true",
   "repository":"https://github.com/Abhijeet1Jadhav/demorelease.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
