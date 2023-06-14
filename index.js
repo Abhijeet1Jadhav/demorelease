@@ -103,7 +103,7 @@ export async function addChannel(pluginConfig, context) {
     errors.push(...error.errors);
   }
   // Making change to trigger release may be
-  if (errors.length > 1) {
+  if (errors.length > 2) {
     throw new AggregateError(errors);
   }
 
