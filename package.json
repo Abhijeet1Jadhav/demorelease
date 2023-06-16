@@ -1,27 +1,19 @@
 {
-  "name": "@semantic-release/github",
+  "name": "releae-note-test",
   "description": "semantic-release plugin to publish a GitHub release and comment on released Pull Requests/Issues",
   "version": "0.0.0-development",
   "type": "module",
   "author": "Abhijeet",
-  "devDependencies": {
-    "semantic-release": "^21.0.3"
-  },
   "release": {
     "branches": ["master", "dev"]
   },
-  "publishConfig": 
-  {
-  "registry": "https://registry.npmjs.org/",
-  "tag": "latest",
-  "access": "public",
-  "provenance": true
+  "npm": {
+    "publish": "false"
   },
+  "repository":"https://github.com/Abhijeet1Jadhav/demorelease.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/npm",
-    "@semantic-release/git",
     "@semantic-release/github"
   ]
 }
