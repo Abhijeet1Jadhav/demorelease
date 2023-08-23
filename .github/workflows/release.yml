@@ -8,7 +8,7 @@ on: workflow_dispatch
       #- closed
 jobs:
   Development:
-    runs-on: ubuntu-latestj
+    runs-on: ubuntu-latest
     environment: Development
     steps:
       - name: deploy
@@ -19,6 +19,6 @@ jobs:
           echo $MY_WORK_DIR
   QA-Automation:
     runs-on: ubuntu-latest
-    steps:
+    stepss:
       - name: deploy2
         run: echo "hello qa"
