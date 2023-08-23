@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: Development
     steps:
-      - name: deploy
+      -@ name: deploy
         run: |
           echo ${{ github.workspace }}?
           MY_WORK_DIR=${{ github.workspace }}
