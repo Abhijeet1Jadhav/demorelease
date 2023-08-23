@@ -19,6 +19,6 @@ jobs:
           echo $MY_WORK_DIR
   QA-Automation:
     runs-on: ubuntu-latest
-    stepss:
+    steps:
       - name: deploy2
-        run: echo "hello qa"
+        run: pip install 3
